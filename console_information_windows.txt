@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace WindowsSystemInformaion
+{
+    class Program
+    {
+        private object lblOs;
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine(System.Environment.OSVersion.Platform);
+            Console.WriteLine(System.Environment.OSVersion.ServicePack);
+            Console.WriteLine(System.Environment.OSVersion.Version);
+            Console.WriteLine(System.Environment.OSVersion.VersionString);
+            Console.WriteLine("OS Version String: " + System.Environment.OSVersion.VersionString);
+            Console.ReadKey();
+        }
+
+        private static void ClasaNoua()
+        {
+            Console.WriteLine(System.Environment.OSVersion.GetType());
+        }
+
+
+
+ 
+    }
+}
